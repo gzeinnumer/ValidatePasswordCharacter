@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: "+isValidPassword("123456Abcdef"));   //true
     }
 
-    public static boolean isValidPassword(final String password) {
+    public boolean isValidPassword(final String password) {
         Pattern pattern;
         Matcher matcher;
 //        final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\\S+$).{4,}$";
